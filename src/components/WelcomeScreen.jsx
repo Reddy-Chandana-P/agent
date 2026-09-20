@@ -11,10 +11,17 @@ export default function WelcomeScreen({ onSuggest }) {
   return (
     <div className="relative flex flex-col items-center justify-center h-full px-6 overflow-hidden">
 
-      {/* Background orbs */}
-      <div className="absolute top-1/4 left-1/3 w-96 h-96 rounded-full bg-violet-600/10 blur-3xl animate-float pointer-events-none" />
-      <div className="absolute bottom-1/4 right-1/3 w-72 h-72 rounded-full bg-indigo-500/10 blur-3xl animate-float-slow pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-purple-900/10 blur-3xl pointer-events-none" />
+      {/* Floral abstract background */}
+      <img
+        src="/bg-floral.jpg"
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
+      />
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-[#080810]/70 pointer-events-none" />
+      {/* Violet tint */}
+      <div className="absolute inset-0 bg-gradient-to-br from-violet-950/40 via-transparent to-indigo-950/40 pointer-events-none" />
 
       <div className="relative z-10 flex flex-col items-center gap-10 w-full max-w-2xl">
 
@@ -42,7 +49,7 @@ export default function WelcomeScreen({ onSuggest }) {
             <button
               key={i}
               onClick={() => onSuggest(s.text)}
-              className="group flex flex-col gap-2 glass rounded-2xl p-4 text-left hover:border-violet-500/30 hover:bg-white/[0.07] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-violet-500/10"
+              className="group flex flex-col gap-2 glass rounded-2xl p-4 text-left hover:border-violet-500/30 hover:bg-white/[0.12] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-violet-500/20 bg-black/30"
             >
               <span className="text-2xl">{s.icon}</span>
               <div>
