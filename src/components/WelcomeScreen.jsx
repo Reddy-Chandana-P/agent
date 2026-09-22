@@ -18,10 +18,10 @@ export default function WelcomeScreen({ onSuggest }) {
         aria-hidden="true"
         className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
       />
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-[#080810]/70 pointer-events-none" />
-      {/* Violet tint */}
-      <div className="absolute inset-0 bg-gradient-to-br from-violet-950/40 via-transparent to-indigo-950/40 pointer-events-none" />
+      {/* Light overlay — just enough to keep text readable */}
+      <div className="absolute inset-0 bg-[#080810]/40 pointer-events-none" />
+      {/* Soft tint */}
+      <div className="absolute inset-0 bg-gradient-to-br from-violet-900/20 via-transparent to-indigo-900/20 pointer-events-none" />
 
       <div className="relative z-10 flex flex-col items-center gap-10 w-full max-w-2xl">
 
@@ -39,7 +39,7 @@ export default function WelcomeScreen({ onSuggest }) {
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold gradient-text mb-2">Hey, I'm Agent</h1>
-            <p className="text-white/40 text-base">Your personal AI assistant — always ready to help.</p>
+            <p className="text-white/60 text-base drop-shadow-md">Your personal AI assistant — always ready to help.</p>
           </div>
         </div>
 
@@ -49,7 +49,7 @@ export default function WelcomeScreen({ onSuggest }) {
             <button
               key={i}
               onClick={() => onSuggest(s.text)}
-              className="group flex flex-col gap-2 glass rounded-2xl p-4 text-left hover:border-violet-500/30 hover:bg-white/[0.12] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-violet-500/20 bg-black/30"
+              className="group flex flex-col gap-2 rounded-2xl p-4 text-left transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-violet-500/20 bg-black/40 border border-white/10 hover:border-violet-400/30 hover:bg-black/50 backdrop-blur-md"
             >
               <span className="text-2xl">{s.icon}</span>
               <div>
