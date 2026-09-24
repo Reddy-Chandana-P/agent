@@ -3,6 +3,7 @@ import Sidebar from "./components/Sidebar";
 import ChatMessage from "./components/ChatMessage";
 import ChatInput from "./components/ChatInput";
 import WelcomeScreen from "./components/WelcomeScreen";
+import PomodoroWidget from "./components/PomodoroWidget";
 
 const MOCK_REPLY = "I'm your personal agent — backend coming soon! For now I'm just a pretty face 😄";
 
@@ -100,6 +101,7 @@ export default function App() {
 
         <ChatInput onSend={handleSend} disabled={loading} />
       </div>
+      <PomodoroWidget />
     </div>
   );
 }
