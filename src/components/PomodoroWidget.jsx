@@ -14,7 +14,7 @@ export default function PomodoroWidget() {
   const [mode, setMode] = useState("focus");
   const [timeLeft, setTimeLeft] = useState(MODES.focus.duration);
   const [running, setRunning] = useState(false);
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
   const intervalRef = useRef(null);
 
   const total = MODES[mode].duration;
