@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 
 const MODES = {
-  focus: { label: "Focus", duration: 25 * 60, color: "text-violet-600", ring: "stroke-violet-500" },
-  short: { label: "Short Break", duration: 5 * 60, color: "text-emerald-600", ring: "stroke-emerald-500" },
-  long:  { label: "Long Break", duration: 15 * 60, color: "text-blue-600", ring: "stroke-blue-500" },
+  focus: { label: "Focus", duration: 25 * 60, color: "text-pink-600", ring: "stroke-pink-500" },
+  short: { label: "Short Break", duration: 5 * 60, color: "text-rose-400", ring: "stroke-rose-400" },
+  long:  { label: "Long Break", duration: 15 * 60, color: "text-fuchsia-500", ring: "stroke-fuchsia-500" },
 };
 
 const SIZE = 80;
@@ -126,7 +126,7 @@ export default function PomodoroWidget() {
                 className={`px-5 py-2 rounded-xl text-sm font-semibold transition-all ${
                   running
                     ? "bg-gray-100 text-gray-500 hover:bg-gray-200"
-                    : "bg-gradient-to-br from-violet-500 to-indigo-600 text-white shadow-md shadow-violet-200 hover:scale-105"
+                    : "bg-gradient-to-br from-pink-500 to-rose-500 text-white shadow-md shadow-pink-200 hover:scale-105"
                 }`}
               >
                 {running ? "Pause" : "Start"}
