@@ -16,13 +16,6 @@ export default function WelcomeScreen({ onSuggest }) {
       <div className="absolute bottom-[-60px] right-[-60px] w-80 h-80 bg-pink-300/30 rounded-full blur-3xl animate-blob pointer-events-none" style={{animationDelay:"3s"}} />
       <div className="absolute top-1/2 left-[-100px] w-64 h-64 bg-blue-200/25 rounded-full blur-3xl animate-blob pointer-events-none" style={{animationDelay:"1.5s"}} />
 
-      <div className="absolute top-16 right-24 w-32 h-32 pointer-events-none opacity-20 animate-spin-slow">
-        <svg viewBox="0 0 100 100" fill="none">
-          <circle cx="50" cy="50" r="45" stroke="url(#ring1)" strokeWidth="1.5" strokeDasharray="8 4"/>
-          <defs><linearGradient id="ring1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stopColor="#7c3aed"/><stop offset="100%" stopColor="#ec4899"/></linearGradient></defs>
-        </svg>
-      </div>
-
       {["top-20 left-1/4 w-2 h-2 bg-violet-400","top-1/3 right-1/4 w-1.5 h-1.5 bg-pink-400","bottom-1/3 left-1/3 w-2 h-2 bg-blue-400","bottom-20 right-1/3 w-1.5 h-1.5 bg-amber-400"].map((cls, i) => (
         <div key={i} className={`absolute ${cls} rounded-full opacity-60 animate-float pointer-events-none`} style={{animationDelay:`${i*1.2}s`}} />
       ))}
