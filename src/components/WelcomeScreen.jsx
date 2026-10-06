@@ -3,7 +3,7 @@ import PomodoroCard from "./PomodoroCard";
 const suggestions = [
   { icon: "📰", label: "News", text: "What's happening in tech today?", from: "from-orange-100", to: "to-amber-50", border: "border-orange-200", accent: "text-orange-500", shadow: "hover:shadow-orange-100" },
   { icon: "📅", label: "Planning", text: "Help me plan my week", from: "from-violet-100", to: "to-purple-50", border: "border-violet-200", accent: "text-violet-600", shadow: "hover:shadow-violet-100" },
-  { icon: "✍️", label: "Writing", text: "Draft a professional email", from: "from-blue-100", to: "to-indigo-50", border: "border-blue-200", accent: "text-blue-600", shadow: "hover:shadow-blue-100" },
+  { icon: "📝", label: "Notepad", text: "Help me take notes", from: "from-blue-100", to: "to-indigo-50", border: "border-blue-200", accent: "text-blue-600", shadow: "hover:shadow-blue-100" },
   { icon: "💡", label: "Ideas", text: "Give me a productivity tip", from: "from-yellow-100", to: "to-lime-50", border: "border-yellow-200", accent: "text-yellow-600", shadow: "hover:shadow-yellow-100" },
   { icon: "🌤️", label: "Briefing", text: "Give me my morning briefing", from: "from-sky-100", to: "to-cyan-50", border: "border-sky-200", accent: "text-sky-600", shadow: "hover:shadow-sky-100" },
 ];
