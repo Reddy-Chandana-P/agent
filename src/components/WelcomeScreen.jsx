@@ -1,4 +1,6 @@
 import PomodoroCard from "./PomodoroCard";
+import Notepad from "./Notepad";
+import { useState } from "react";
 
 const suggestions = [
   { icon: "📰", label: "News", text: "What's happening in tech today?", from: "from-orange-100", to: "to-amber-50", border: "border-orange-200", accent: "text-orange-500", shadow: "hover:shadow-orange-100" },
@@ -9,6 +11,7 @@ const suggestions = [
 ];
 
 export default function WelcomeScreen({ onSuggest }) {
+  const [notepadOpen, setNotepadOpen] = useState(false);
   return (
     <div className="relative flex flex-col items-center justify-center h-full px-6 overflow-hidden main-bg">
 
@@ -44,7 +47,7 @@ export default function WelcomeScreen({ onSuggest }) {
           {suggestions.map((s, i) => (
             <button
               key={i}
-              onClick={() => onSuggest(s.text)}
+              onClick={() => s.label === "Notepad" ? setNotepadOpen(true) : onSuggest(s.text)}
               className={`group flex flex-col gap-3 bg-gradient-to-br ${s.from} ${s.to} rounded-2xl p-4 text-left border ${s.border} hover:shadow-xl ${s.shadow} transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02]`}
             >
               <div className="flex items-center justify-between">
@@ -76,5 +79,6 @@ export default function WelcomeScreen({ onSuggest }) {
         </div>
       </div>
     </div>
+    {notepadOpen && <Notepad onClose={() => setNotepadOpen(false)} />}
   );
 }
