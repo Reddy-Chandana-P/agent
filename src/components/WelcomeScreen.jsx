@@ -13,6 +13,7 @@ const suggestions = [
 export default function WelcomeScreen({ onSuggest }) {
   const [notepadOpen, setNotepadOpen] = useState(false);
   return (
+    <>
     <div className="relative flex flex-col items-center justify-center h-full px-6 overflow-hidden main-bg">
 
       <div className="absolute top-[-80px] left-[-80px] w-96 h-96 bg-violet-300/30 rounded-full blur-3xl animate-blob pointer-events-none" />
@@ -80,5 +81,6 @@ export default function WelcomeScreen({ onSuggest }) {
       </div>
     </div>
     {notepadOpen && <Notepad onClose={() => setNotepadOpen(false)} />}
+    </>
   );
 }
