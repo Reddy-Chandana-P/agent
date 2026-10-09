@@ -39,6 +39,18 @@ export default function App() {
         {/* Topbar */}
         <div className="topbar-bg flex items-center justify-between px-6 py-3.5 shrink-0">
           <div className="flex items-center gap-2.5">
+            {messages.length > 0 && (
+              <button
+                onClick={handleNewChat}
+                className="flex items-center gap-1.5 p-1.5 rounded-lg hover:bg-violet-50 text-gray-400 hover:text-violet-500 transition-all"
+                title="Go home"
+              >
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                  <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+              </button>
+            )}
             <div className="flex items-center gap-1.5">
               <div className="w-2 h-2 rounded-full bg-gradient-to-r from-violet-500 to-pink-500" />
               <span className="text-sm text-gray-500 font-medium">
