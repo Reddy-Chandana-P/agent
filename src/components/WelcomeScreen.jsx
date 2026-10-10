@@ -66,18 +66,6 @@ export default function WelcomeScreen({ onSuggest }) {
           <PomodoroCard />
         </div>
 
-        <div className="flex items-center gap-3 animate-fade-up" style={{ animationDelay: "0.25s", opacity: 0 }}>
-          {[
-            { label: "Always on", color: "bg-emerald-500", bg: "bg-emerald-50", text: "text-emerald-700", border: "border-emerald-200" },
-            { label: "Private", color: "bg-violet-500", bg: "bg-violet-50", text: "text-violet-700", border: "border-violet-200" },
-            { label: "Fast", color: "bg-pink-500", bg: "bg-pink-50", text: "text-pink-700", border: "border-pink-200" },
-          ].map((s, i) => (
-            <div key={i} className={`flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full ${s.bg} ${s.text} border ${s.border}`}>
-              <span className={`w-1.5 h-1.5 rounded-full ${s.color}`} />
-              {s.label}
-            </div>
-          ))}
-        </div>
       </div>
     </div>
     {notepadOpen && <Notepad onClose={() => setNotepadOpen(false)} />}
