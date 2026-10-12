@@ -56,11 +56,9 @@ body {
 
 .gradient-text {
   background: linear-gradient(135deg, #7c3aed 0%, #a855f7 40%, #ec4899 100%);
-  background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: shimmer 5s linear infinite;
 }
 
 .sidebar-bg {
@@ -112,9 +110,7 @@ body {
 }
 
 .new-chat-btn {
-  background: linear-gradient(135deg, #7c3aed, #a855f7, #ec4899);
-  background-size: 200% auto;
-  animation: shimmer 4s linear infinite;
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
   box-shadow: 0 4px 15px rgba(168,85,247,0.35);
 }
 .new-chat-btn:hover {
@@ -123,9 +119,7 @@ body {
 }
 
 .send-btn {
-  background: linear-gradient(135deg, #7c3aed, #a855f7, #ec4899);
-  background-size: 200% auto;
-  animation: shimmer 4s linear infinite;
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
   box-shadow: 0 4px 15px rgba(168,85,247,0.3);
 }
 .send-btn:hover {
