@@ -25,7 +25,7 @@ export default function ChatMessage({ role, content }) {
         <div className="relative shrink-0 mt-1">
           <div className="absolute inset-0 rounded-full bg-pink-400/30 blur-md" />
           <div className="relative w-8 h-8 rounded-full bg-gradient-to-br from-violet-500 to-pink-500 flex items-center justify-center text-xs font-bold text-white shadow-lg shadow-violet-200">
-            R
+            C
           </div>
         </div>
       )}
