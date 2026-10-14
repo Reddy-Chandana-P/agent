@@ -89,13 +89,13 @@ export default function Sidebar({ onNewChat, activeId, onSelect }) {
           <div className="relative shrink-0">
             <div className="absolute inset-0 rounded-full bg-violet-400/30 blur-sm" />
             <div className="relative w-9 h-9 rounded-full bg-gradient-to-br from-violet-500 to-pink-500 flex items-center justify-center text-sm font-bold text-white shadow-lg shadow-violet-200">
-              C
+              R
             </div>
             <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-emerald-400 rounded-full border-2 border-white shadow-sm" />
           </div>
           {!collapsed && (
             <div className="text-left">
-              <p className="text-sm font-semibold text-gray-700">Chandana</p>
+              <p className="text-sm font-semibold text-gray-700">Reddy</p>
               <p className="text-[11px] text-emerald-500 font-medium">● Online</p>
             </div>
           )}
