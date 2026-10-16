@@ -1,12 +1,6 @@
 import { useState } from "react";
 
-const mockChats = [
-  { id: 1, title: "Plan my week", time: "Today" },
-  { id: 2, title: "Summarize this article", time: "Today" },
-  { id: 3, title: "Morning briefing", time: "Yesterday" },
-  { id: 4, title: "Top tech news", time: "Yesterday" },
-  { id: 5, title: "Remind me about meeting", time: "Sep 15" },
-];
+const mockChats = [];
 
 export default function Sidebar({ onNewChat, activeId, onSelect }) {
   const [collapsed, setCollapsed] = useState(false);
